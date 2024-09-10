@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var h11=document.createElement("h1");
+        h11.innerText="Resume";
+        h11.style.color="orange";
+        document.body.appendChild(h11);
+        var h2=document.createElement("h2");
+        h2.innerText="Career objectives";
+        h2.style.color="red";
+        document.body.appendChild(h2);
+        var h55=document.createElement("h5");
+        h55.innerText="To be associated with an organization that helps utilizes the skills";
+        document.body.appendChild(h55);
+        var h21=document.createElement("h2");
+        h21.innerText="Likes";
+        h21.style.color="red";
+        document.body.appendChild(h21)
+        var pre=document.createElement("pre");
+        pre.textContent="playing"
+        document.body.appendChild(pre)
+        var h22=document.createElement("h2");
+        h22.innerText="Projects";
+        h22.style.color="red";
+        document.body.appendChild(h22);
+        var p=document.createElement("p")
+        p.textContent="Multiple object detection using deep learning";
+        document.body.appendChild(p)
+
+        let b=0;
+        const a=["blue","red","green","orange","black"]
+        function styles(){
+            document.body.style.backgroundColor=a[b];
+            b=(b+1)% a.length;
+        }
+
+    </script>
+    <button onclick="styles()">click me</button>
+    
+</body>
+</html>
